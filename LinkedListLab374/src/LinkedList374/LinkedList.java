@@ -54,9 +54,58 @@ public class LinkedList {
     	return(temp);
     }
 	
+    
+    
+    public ListElement deleteElement(int index)
+    {
+    	ListElement previous = null;
+    	ListElement current = head;
+    	
+    	
+    	if(head == null)
+    	{
+    		System.out.print("The list is empty.\n");
+    		return(head);
+    	}
+    	
+    	else
+    	{
+    		if(head.getData() == index)
+    		{
+    			head = head.getNext();
+    			return(head);
+    		}
+    		
+    		
+    		while(current != null && current.getData() != index)
+    		{
+    			previous = current;
+    			current = current.getNext();
+    		}
+    		
+    		
+    		if(current == null)
+    		{
+    			System.out.print("That node is not in the list.\n");
+    			return(current);
+    		}
+    		
+    		
+    		else 
+    		{
+    			previous.setNext(current.getNext());
+    		}
+    		
+    		
+    		return(previous);
+    	}
+    	
+    }
 	
 	
 	
+    
+    
 	
 	
 	
