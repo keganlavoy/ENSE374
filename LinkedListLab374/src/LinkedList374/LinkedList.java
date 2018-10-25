@@ -104,13 +104,37 @@ public class LinkedList {
 	
 	
 	
-    
-    
-	
-	
-	
-	
-	
-	
-	    
+    public void printLinkedList()
+    {
+    	ListElement temp = head;
+    	
+    	
+    	
+    	if(temp == null)
+    	{
+    		System.out.print("The list is empty.\n");	
+    	}
+    	
+    	
+    	else if(temp.getNext() == null)
+    	{
+    		System.out.print(temp.getData() + " ");
+    	}
+    	
+    	
+    	else
+    	{
+    		do 
+    		{
+    			System.out.print(temp.getData() + " ");
+    			temp = temp.getNext();
+    		}
+    		
+    		
+    		while(temp != null);
+    	}
+    	
+    	System.out.print("\n");
     }
+    
+}
