@@ -10,8 +10,8 @@ package LinkedList374;
 public class ListElement {
 	
 	
-	public ListElement next;
-	//private ListEl
+	private ListElement next;
+	private ListElement previous;
 	private int data;
 	
 	
@@ -19,6 +19,7 @@ public class ListElement {
 	{
 		this.next = null;
 		this.data = 0;
+		this.previous = null;
 		
 	}
 	
@@ -42,6 +43,16 @@ public class ListElement {
 	public ListElement getNext()
 	{
 		return this.next;
+	}
+	
+	public void setPrevious(ListElement previous)
+	{
+		this.previous = previous;
+	}
+	
+	public ListElement getPrevious()
+	{
+		return this.previous;
 	}
 	
 	

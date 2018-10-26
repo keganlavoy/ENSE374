@@ -46,6 +46,8 @@ public class main
 		
 		
 		list.printLinkedList();
+		list.printLinkedListFromTail(element1);
+		System.out.print("\n");
 		
 		
 		ListElement temp = new ListElement();
@@ -64,12 +66,18 @@ public class main
 		System.out.print("Delete element that contain a 2: \n");
 		list.deleteElement(2);
 		list.printLinkedList();
+		list.printLinkedListFromTail(element1);
 		
 		System.out.print("\n");
 		
 		System.out.print("Delete head: \n");
 		list.deleteElement(1);
 		list.printLinkedList();
+		
+		
+		System.out.print("Delete tail: \n");
+		list.deleteElement(5);
+		list.printLinkedListFromTail(element1);
 		
 		System.out.print("\n");
 		

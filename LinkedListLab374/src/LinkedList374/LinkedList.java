@@ -137,4 +137,18 @@ public class LinkedList {
     	System.out.print("\n");
     }
     
+    
+    
+    public void printLinkedListFromTail (ListElement element)
+    {
+    	if (element == null)
+    	{
+    		
+    		return;
+        }
+    
+    printLinkedListFromTail(element.getNext());
+    System.out.print(element.getData() + " ");
+    }
+    
 }
